@@ -1,0 +1,26 @@
+{
+  "name": "phillhendry",
+  "version": "0.0.1",
+  "description": "phillhendry.com - design with a touch of rock 'n' roll",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Phill Hendry",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "connect-livereload": "^0.6.0",
+    "grunt": "~0.4.5",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-sass": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-postcss": "latest",
+    "gutenberg-web-type": "latest"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0"
+  }
+}
