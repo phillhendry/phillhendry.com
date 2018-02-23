@@ -7408,11 +7408,28 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered th,
   .table-bordered td {
     border: 1px solid #ddd !important; } }
+::-moz-selection {
+  /* Code for Firefox */
+  color: #fff;
+  background: #F0A202; }
+
+::selection {
+  color: #fff;
+  background: #F0A202; }
+
 body {
   background: -webkit-gradient(linear, left bottom, left top, from(#de3c4b), to(#ca054d));
   background: linear-gradient(0deg, #de3c4b, #ca054d);
   height: 100vh;
   background-image: image("images/icecream.png"); }
+  body a {
+    color: #fff;
+    font-weight: 600;
+    -webkit-transition: color .2s linear;
+    transition: color .2s linear; }
+    body a:hover {
+      color: #F0A202;
+      text-decoration: none; }
   body main {
     color: #000000;
     display: -webkit-box;
@@ -7430,6 +7447,9 @@ body {
         letter-spacing: 0.08rem;
         font-size: 1.5rem;
         padding: 0px; }
+    body main .navbar-brand {
+      color: #fff;
+      text-transform: uppercase; }
     body main h1 {
       font-size: calc(9rem - 2.8rem);
       font-family: "canada-type-gibson", sans-serif;
@@ -7468,3 +7488,40 @@ body {
       @media (min-width: 992px) {
         body main .icecream img {
           left: 60vw; } }
+    body main .socialicons {
+      font-size: 3rem; }
+      body main .socialicons a {
+        color: #fff;
+        -webkit-transition: color .2s linear;
+        transition: color .2s linear; }
+        body main .socialicons a:hover {
+          color: #F0A202; }
+    body main .modal-content button {
+      position: absolute;
+      top: 10px;
+      color: #fff;
+      z-index: 1;
+      top: -55px;
+      right: 0px;
+      opacity: 1;
+      -webkit-transition: color .2s linear;
+      transition: color .2s linear; }
+      body main .modal-content button:hover {
+        color: #000; }
+    body main .modal.fade .modal-dialog {
+      -webkit-transition: -webkit-transform 0.3s ease-out;
+      transition: -webkit-transform 0.3s ease-out;
+      transition: transform 0.3s ease-out;
+      transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out; }
+    body main .videoWrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      /* 16:9 */
+      padding-top: 25px;
+      height: 0; }
+    body main .videoWrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
