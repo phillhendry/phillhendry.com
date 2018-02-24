@@ -7417,11 +7417,16 @@ a.text-dark:hover, a.text-dark:focus {
   color: #fff;
   background: #F0A202; }
 
+html {
+  height: 100%; }
+
 body {
   background: -webkit-gradient(linear, left bottom, left top, from(#de3c4b), to(#ca054d));
   background: linear-gradient(0deg, #de3c4b, #ca054d);
-  height: 100vh;
-  background-image: image("images/icecream.png"); }
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
   body a {
     color: #fff;
     font-weight: 600;
@@ -7475,9 +7480,10 @@ body {
       font-weight: 300;
       color: #fff; }
     body main .icecream img {
-      width: 600px;
+      width: auto;
+      height: 100%;
       position: fixed;
-      top: 16vh;
+      top: 0;
       left: 22vw;
       z-index: -1;
       -webkit-filter: blur(2px);
