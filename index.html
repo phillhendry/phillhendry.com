@@ -29,7 +29,13 @@
     <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
+    <!-- Menu Icon Toggle -->
+    <script type="application/javascript">
+        $('#menu-icon-toggle').click(function() {
+            $(this).find('i').toggleClass('fa-bars fa-times')
+        });
 
+    </script>
 
 
     <meta name="theme-color" content="#000000">
@@ -63,8 +69,8 @@
                     <span class="navbar-brand mb-0 h1 d-lg-none">Phill Hendry</span>
 
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
+                        <span class="navbar-toggler-icon" id="menu-icon-toggle"><i class="fas fa-bars"></i></span>
+                    </button>
 
 
                     <div class="collapse navbar-collapse" id="mainNav">
@@ -110,6 +116,7 @@
                         while (x = eval(x));
                         //-->
                         //]]>
+
                     </script>
                 </p>
 
