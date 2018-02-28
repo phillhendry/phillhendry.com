@@ -7837,7 +7837,7 @@ fieldset:disabled a.btn {
 
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.2rem; }
 
@@ -7865,12 +7865,38 @@ html {
   height: 100%; }
 
 body {
-  background: -webkit-gradient(linear, left bottom, left top, from(#de3c4b), to(#ca054d));
-  background: linear-gradient(0deg, #de3c4b, #ca054d);
   height: 100%;
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed; }
+  body.index {
+    background: -webkit-gradient(linear, left bottom, left top, from(#DE3C4B), to(#ca054d));
+    background: linear-gradient(0deg, #DE3C4B, #ca054d); }
+    body.index .active {
+      color: #7f0331; }
+  body.about {
+    background: -webkit-gradient(linear, left bottom, left top, from(#F0A202), to(#fdc041));
+    background: linear-gradient(0deg, #F0A202, #fdc041); }
+    body.about .active {
+      color: #a46f01; }
+    body.about .socialicons a:hover {
+      color: #ca054d; }
+    body.about p a:hover {
+      color: #ca054d; }
+  body.portfolio {
+    background: -webkit-gradient(linear, left bottom, left top, from(#096270), to(#1A91A2));
+    background: linear-gradient(0deg, #096270, #1A91A2); }
+    body.portfolio .active {
+      color: #032429; }
+  body.contact {
+    background: -webkit-gradient(linear, left bottom, left top, from(#ca054d), to(#F0A202));
+    background: linear-gradient(0deg, #ca054d, #F0A202); }
+    body.contact .active {
+      color: #7f0331; }
+    body.contact .socialicons a:hover {
+      color: #ca054d; }
+    body.contact p a:hover {
+      color: #ca054d; }
   body a {
     color: #fff;
     font-weight: 600;
@@ -7883,24 +7909,74 @@ body {
     color: #000000;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
-    body main .nav-item {
-      background-color: transparent;
-      -webkit-transition: background-color .6s linear;
-      transition: background-color .6s linear; }
-      body main .nav-item:hover {
-        background-color: #F0A202 !important; }
-      body main .nav-item a {
-        font-weight: 600;
+    display: flex;
+    /* Nav Item Hover Effect */
+    /* Nav items */
+    /* Content Related */
+    /* Modal Styling */ }
+    body main .nav-hover {
+      min-width: 10rem; }
+      body main .nav-hover a {
+        overflow: hidden;
+        padding: 0 4px;
+        height: 2rem;
+        font-weight: 300;
         color: #fff;
-        letter-spacing: 0.08rem;
-        font-size: 1.5rem;
-        padding: 0px; }
+        letter-spacing: .04rem;
+        font-size: 1.4rem; }
+    body main .nav-hover a span {
+      position: relative;
+      display: inline-block;
+      -webkit-transition: -webkit-transform 0.4s;
+      transition: -webkit-transform 0.4s;
+      transition: transform 0.4s;
+      transition: transform 0.4s, -webkit-transform 0.4s; }
+    body main .nav-hover a span:before {
+      position: absolute;
+      top: 100%;
+      content: attr(data-hover);
+      font-weight: 900;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0); }
+    body main .nav-hover a:hover span,
+    body main .nav-hover a:focus span {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%); }
     body main .navbar-brand {
       color: #fff;
       text-transform: uppercase; }
+    body main .fixed {
+      position: fixed;
+      top: 0; }
+    body main .navDesc p {
+      font-size: 1.2rem; }
+      @media (max-width: 991.98px) {
+        body main .navDesc p {
+          font-size: 1rem; } }
+    body main .active {
+      font-weight: 900; }
+    body main .mobile-menu {
+      position: fixed;
+      bottom: 0;
+      background-color: #fff;
+      height: 50px;
+      width: 100%;
+      z-index: 1; }
+      body main .mobile-menu .mobile-item {
+        height: 50px;
+        text-align: center;
+        padding-top: 9px;
+        font-size: 1.2rem; }
+        body main .mobile-menu .mobile-item span {
+          font-size: 0.5rem;
+          display: block;
+          position: relative;
+          bottom: 0.4rem;
+          color: #ca054d; }
+        body main .mobile-menu .mobile-item a {
+          color: #DE3C4B; }
     body main h1 {
-      font-size: calc(9rem - 2.8rem);
+      font-size: calc(9rem - 3.2rem);
       font-family: "canada-type-gibson", sans-serif;
       font-weight: 600;
       color: #fff;
@@ -7923,6 +7999,11 @@ body {
       font-family: "canada-type-gibson", sans-serif;
       font-weight: 300;
       color: #fff; }
+    body main .content {
+      max-width: 45rem; }
+    body main .attention-grabber {
+      font-size: 3.5rem;
+      line-height: 4rem; }
     body main .icecream img {
       width: auto;
       height: 100%;
@@ -7939,7 +8020,7 @@ body {
         body main .icecream img {
           left: 60vw; } }
     body main .socialicons {
-      font-size: 3rem; }
+      font-size: 1.6rem; }
       body main .socialicons a {
         color: #fff;
         -webkit-transition: color .2s linear;

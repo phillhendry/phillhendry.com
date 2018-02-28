@@ -27,9 +27,7 @@
     <meta name="msapplication-TileColor" content="#FFFFFF">
 
     <!-- Font Awesome -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-
-
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
 
 
     <meta name="theme-color" content="#000000">
@@ -46,59 +44,84 @@
 </head>
 
 
-<body>
+<body class="portfolio mx-lg-3">
 
 
-    <main role="main" class="container-fluid">
+    <main role="main" class="container-fluid pb-5 mb-5">
 
 
-        <div id="Home" class="row mt-lg-5 pt-lg-5">
+        <div id="Home" class="row mt-lg-5 pt-md-5">
 
-            <div class="col-xs-12 col-lg-3 mt-lg-5 pt-lg-3">
-                <div class="navDesc d-none d-lg-block pl-4">
+            <div class="col-xs-12 col-md-3 mt-md-5 pt-md-3">
+                <div class="navDesc d-none d-md-block pl-lg-4">
                     <h3>Phill Hendry</h3>
+
+                    <div class="socialicons pb-2">
+                        <a href="https://www.vimeo.com/phillhendry" target="_blank"><i class="fab fa-vimeo-square"></i></a>
+                        <a href="https://www.instagram.com/phillhendry" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/phillhendry/" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                    </div>
                     <p>Rock n Roll lovin' designer from Belfast. Tolkien nut, comic book geek and movie nerd. Branding, motion graphics, web and UX design. Trying to create great products.</p>
                 </div>
-                <nav class="navbar navbar-expand-lg">
-                    <span class="navbar-brand mb-0 h1 d-lg-none">Phill Hendry</span>
-
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
+                <nav class="navbar navbar-expand-md px-md-0 pl-lg-3">
 
 
                     <div class="collapse navbar-collapse" id="mainNav">
-                        <ul class="navbar-nav mr-auto flex-column">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="/index.html">Home</a>
+                        <ul class="navbar-nav mr-auto flex-column nav-hover">
+                            <li class="nav-item pb-2">
+                                <a class="nav-link pl-lg-2 pl-md-0" href="/index.html"><span data-hover="Home">Home</span><span class="sr-only">(current)</span></a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/about.html">About<span class="sr-only">(current)</span></a>
+                            <li class="nav-item pb-2">
+                                <a class="nav-link pl-lg-2 pl-md-0" href="/about.html"><span data-hover="About">About</span></a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/portfolio.html">Portfolio</a>
+                            <li class="nav-item pb-2">
+                                <a class="nav-link pl-lg-2 pl-md-0" href="/portfolio.html"><span class="active" data-hover="Portfolio">Portfolio</span></a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/contact.html">Contact</a>
+                            <li class="nav-item pb-2">
+                                <a class="nav-link pl-lg-2 pl-md-0" href="/contact.html"><span data-hover="Contact">Contact</span></a>
                             </li>
                         </ul>
                     </div>
                 </nav>
 
+
             </div>
 
+            <!-- Mobile Menu -->
+            <div class="mobile-menu d-md-none mt-4">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                            <div class="mobile-item align-middle">
+                                <a href="/index.html"><i class="fas fa-home align-baseline"></i><span class="mobile-label">Home</span></a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mobile-item">
+                                <a href="/about.html"><i class="fas fa-coffee align-baseline"></i><span class="mobile-label">About</span></a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mobile-item">
+                                <a href="/portfolio.html"><i class="fas fa-paint-brush align-baseline"></i><span class="mobile-label">Portfolio</span></a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mobile-item">
+                                <a href="/contact.html"><i class="fas fa-comments align-baseline"></i><span class="mobile-label">Contact</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <div class="col-md-9 mt-5 pl-lg-5">
-                <h1 class="pb-5">Portfolio Page</h1>
+            <!-- Content -->
+            <div class="col-md-9 mt-5 pl-lg-5 content">
+                <h1 class="pb-5">Portfolio</h1>
                 <h2>New website coming soon</h2>
 
                 <a href="#" class="btn btn-lg btn-dark white mt-3" data-toggle="modal" data-target="#videoCV"><i class="fab fa-youtube mr-3"></i>Watch my video CV</a>
 
-                <div class="socialicons pt-4">
-                    <a href="https://www.vimeo.com/phillhendry" target="_blank"><i class="fab fa-vimeo-square"></i></a>
-                    <a href="https://www.instagram.com/phillhendry" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://twitter.com/phillhendry/" target="_blank"><i class="fab fa-twitter-square"></i></a>
-                </div>
 
 
 

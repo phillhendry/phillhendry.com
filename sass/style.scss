@@ -6,6 +6,7 @@
 @import 'variables';
 @import 'buttons';
 
+
 ::-moz-selection {
 	/* Code for Firefox */
 	color: $white;
@@ -24,11 +25,62 @@ html {
 
 body {
 
-	background: $primary-gradient;
 	height: 100%;
 	margin: 0;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	&.index {
+		background: $primary-gradient;
+		.active {
+			color: darken($quartinary, 15%);
+		}
+	}
+	&.about {
+		background: $secondary-gradient;
+		.active {
+			color: darken($tertiary, 15%);
+		}
+		.socialicons {
+			a {
+				&:hover {
+					color: $quartinary;
+				}
+			}
+		}
+		p {
+			a {
+				&:hover {
+					color: $quartinary;
+				}
+			}
+		}
+	}
+	&.portfolio {
+		background: $tertiary-gradient;
+		.active {
+			color: darken($primary, 15%);
+		}
+	}
+	&.contact {
+		background: $quartinary-gradient;
+		.active {
+			color: darken($quartinary, 15%);
+		}
+		.socialicons {
+			a {
+				&:hover {
+					color: $quartinary;
+				}
+			}
+		}
+		p {
+			a {
+				&:hover {
+					color: $quartinary;
+				}
+			}
+		}
+	}
 	a {
 		color: $white;
 		font-weight: $font-weight-bold;
@@ -42,28 +94,103 @@ body {
 		color: $font-color;
 		display: flex;
 
-		.nav-item {
-			background-color: transparent;
-			transition: background-color .6s linear;
-			&:hover {
-				background-color: $tertiary !important;
-			}
+		/* Nav Item Hover Effect */
+		.nav-hover {
+
+			min-width: 10rem;
+
 			a {
-				font-weight: $font-weight-bold;
-				color: $white;
-				letter-spacing: 0.08rem;
-				font-size: 1.5rem;
-				padding: 0px;
+				overflow: hidden;
+				padding: 0 4px;
+				height: 2rem;
+				font-weight: 300;
+				color: #fff;
+				letter-spacing: .04rem;
+				font-size: 1.4rem;
 			}
 		}
 
+		.nav-hover a span {
+			position: relative;
+			display: inline-block;
+			-webkit-transition: -webkit-transform 0.4s;
+			-moz-transition: -moz-transform 0.4s;
+			transition: transform 0.4s;
+		}
+
+		.nav-hover a span {
+			&:before {
+				position: absolute;
+				top: 100%;
+				content: attr(data-hover);
+				font-weight: 900;
+				-webkit-transform: translate3d(0, 0, 0);
+				-moz-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+			}
+
+		}
+
+		.nav-hover a:hover span,
+		.nav-hover a:focus span {
+			-webkit-transform: translateY(-100%);
+			-moz-transform: translateY(-100%);
+			transform: translateY(-100%);
+		}
+
+
+		/* Nav items */
 		.navbar-brand {
 			color: $white;
 			text-transform: uppercase;
 		}
 
+		.fixed {
+			position: fixed;
+			top: 0;
+		}
+		.navDesc {
+			p {
+				font-size: $font-size-base;
+				@include media-breakpoint-down(md) {
+					font-size: $font-size-sm;
+				}
+			}
+		}
+
+		.active {
+			font-weight: 900;
+		}
+
+		.mobile-menu {
+			position: fixed;
+			bottom: 0;
+			background-color: $white;
+			height: 50px;
+			width: 100%;
+			z-index: 1;
+			.mobile-item {
+				height: 50px;
+				text-align: center;
+				padding-top: 9px;
+				font-size: 1.2rem;
+				span {
+					font-size: 0.5rem;
+					display: block;
+					position: relative;
+					bottom: 0.4rem;
+					color: $quartinary;
+				}
+				a {
+					color: $fifth;
+				}
+
+			}
+		}
+
+		/* Content Related */
 		h1 {
-			font-size: calc(#{$h1-font-size} - 2.8rem);
+			font-size: calc(#{$h1-font-size} - 3.2rem);
 			font-family: $font-family-sans-serif;
 			font-weight: $font-weight-bold;
 			color: $white;
@@ -91,6 +218,13 @@ body {
 			font-weight: $font-weight-light;
 			color: $white;
 		}
+		.content {
+			max-width: $content-width;
+		}
+		.attention-grabber {
+			font-size: $display4-size;
+			line-height: 4rem;
+		}
 
 		.icecream {
 			img {
@@ -112,7 +246,7 @@ body {
 
 		}
 		.socialicons {
-			font-size: 3rem;
+			font-size: 1.6rem;
 			a {
 				color: $white;
 				transition: color .2s linear;
@@ -122,6 +256,8 @@ body {
 			}
 
 		}
+
+		/* Modal Styling */
 		.modal-content {
 			button {
 				position: absolute;
@@ -162,4 +298,5 @@ body {
 		}
 
 	}
+
 }
