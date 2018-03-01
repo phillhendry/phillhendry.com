@@ -5,6 +5,7 @@
 @import 'colors';
 @import 'variables';
 @import 'buttons';
+@import 'blog';
 
 
 ::-moz-selection {
@@ -31,12 +32,16 @@ body {
 	background-attachment: fixed;
 	&.index {
 		background: $primary-gradient;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
 		.active {
 			color: darken($quartinary, 15%);
 		}
 	}
 	&.about {
 		background: $secondary-gradient;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
 		.active {
 			color: darken($tertiary, 15%);
 		}
@@ -57,12 +62,16 @@ body {
 	}
 	&.portfolio {
 		background: $tertiary-gradient;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
 		.active {
 			color: darken($primary, 15%);
 		}
 	}
 	&.contact {
 		background: $quartinary-gradient;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
 		.active {
 			color: darken($quartinary, 15%);
 		}
@@ -92,6 +101,7 @@ body {
 	}
 	main {
 		color: $font-color;
+		font-family: $font-family-sans-serif;
 		display: flex;
 
 		/* Nav Item Hover Effect */
@@ -147,7 +157,6 @@ body {
 
 		.fixed {
 			position: fixed;
-			top: 0;
 		}
 		.navDesc {
 			p {
@@ -190,11 +199,11 @@ body {
 
 		/* Content Related */
 		h1 {
-			font-size: calc(#{$h1-font-size} - 3.2rem);
+			font-size: calc(#{$h1-font-size} - 3rem);
 			font-family: $font-family-sans-serif;
 			font-weight: $font-weight-bold;
 			color: $white;
-			line-height: 6rem;
+			line-height: 4.5rem;
 
 			@include media-breakpoint-up(sm) {
 				font-size: $h1-font-size;
@@ -214,7 +223,6 @@ body {
 		}
 		p {
 			font-size: $font-size-base;
-			font-family: $font-family-sans-serif;
 			font-weight: $font-weight-light;
 			color: $white;
 		}
@@ -224,6 +232,7 @@ body {
 		.attention-grabber {
 			font-size: $display4-size;
 			line-height: 4rem;
+			color: $white;
 		}
 
 		.icecream {
