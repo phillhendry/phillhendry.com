@@ -21,6 +21,7 @@
     "gutenberg-web-type": "latest"
   },
   "dependencies": {
+    "animate.css": "^3.6.1",
     "bootstrap": "^4.0.0"
   }
 }

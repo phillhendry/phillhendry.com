@@ -5,7 +5,7 @@
 @import 'colors';
 @import 'variables';
 @import 'buttons';
-@import 'blog';
+
 
 
 ::-moz-selection {
@@ -226,6 +226,7 @@ body {
 			font-weight: $font-weight-light;
 			color: $white;
 		}
+
 		.content {
 			max-width: $content-width;
 		}
@@ -308,4 +309,39 @@ body {
 
 	}
 
+}
+
+
+// Portfolio Styling //
+.portfolio_content {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	.thumbs {
+		img {
+			padding: 5px;
+		}
+	}
+	.portfolio_content {
+		.badge {
+			text-transform: uppercase;
+			font-weight: $font-weight-bold;
+
+		}
+	}
+}
+
+.fancybox-close-small {
+	width: 6rem;
+	height: 6rem;
+	&:after {
+		font-size: 4rem;
+		margin: 2rem;
+		color: $white;
+	}
+	&:hover {
+		&:after {
+			background: none;
+		}
+	}
 }
