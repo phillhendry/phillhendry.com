@@ -30,6 +30,8 @@
     <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
     <!-- Fancy Box -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
 
     <meta name="theme-color" content="#000000">
@@ -129,7 +131,10 @@
                     <!-- Thumnail Gallery -->
                     <div class="thumbs">
                         <a data-fancybox id="amv" data-src="#amv-content" href="javascript:;" class="">
-                        <img src="images/Thumbnails/amv.jpg">
+                        <img src="images/Thumbnails/amv.jpg" class="image">
+                        <div class="overlay">
+                            <div class="text"><i class="far fa-images fa-3x"></i></div>
+                        </div>
                     </a>
                     </div>
 
@@ -140,7 +145,7 @@
 
                     <!--AMV-->
 
-                    <div id="amv-content" class="portfolio_content bg-danger text-white text-center" style="display: none;">
+                    <div id="amv-content" class="portfolio_content bg-danger text-white text-center animated zoomIn" style="display: none;">
                         <div class="">
                             <div class="display-2 mb-4">AMV</div>
                             <h5>
@@ -149,13 +154,13 @@
                                 <span class="badge badge-pill badge-light m-2 p-2 px-3"><i class="fas fa-video pr-2 text-danger"></i>Motion Graphics</span>
                             </h5>
                             <p class="mt-4">Description of project goes here.</p>
-                            <div class="thumbs">
-                                <a href="images/AMV/AMV-branding-mockup.jpg" data-fancybox="AMV" data-caption="AMV Branding"><img src="images/AMV/_thumb/AMV-branding-mockup.jpg"></a>
-                                <a href="images/AMV/AMV-business-card-mockup.jpg" data-fancybox="AMV" data-caption="AMV Business Card"><img src="images/AMV/_thumb/AMV-business-card-mockup.jpg"></a>
-                                <a href="images/AMV/AMV-letterhead-mockup.jpg" data-fancybox="AMV" data-caption="AMV Letterhead"><img src="images/AMV/_thumb/AMV-letterhead-mockup.jpg"></a>
-                                <a href="images/AMV/AMV-logo-mockup.jpg" data-fancybox="AMV" data-caption="AMV Logo"><img src="images/AMV/_thumb/AMV-logo-mockup.jpg"></a>
-                                <a href="images/AMV/AMV-website-mockup.jpg" data-fancybox="AMV"><img src="images/AMV/_thumb/AMV-website-mockup.jpg"></a>
-                            </div>
+
+                            <a href="images/AMV/AMV-branding-mockup.jpg" data-fancybox="AMV" data-caption="AMV Branding"><img src="images/AMV/_thumb/AMV-branding-mockup.jpg"></a>
+                            <a href="images/AMV/AMV-business-card-mockup.jpg" data-fancybox="AMV" data-caption="AMV Business Card"><img src="images/AMV/_thumb/AMV-business-card-mockup.jpg"></a>
+                            <a href="images/AMV/AMV-letterhead-mockup.jpg" data-fancybox="AMV" data-caption="AMV Letterhead"><img src="images/AMV/_thumb/AMV-letterhead-mockup.jpg"></a>
+                            <a href="images/AMV/AMV-logo-mockup.jpg" data-fancybox="AMV" data-caption="AMV Logo"><img src="images/AMV/_thumb/AMV-logo-mockup.jpg"></a>
+                            <a href="images/AMV/AMV-website-mockup.jpg" data-fancybox="AMV"><img src="images/AMV/_thumb/AMV-website-mockup.jpg"></a>
+
                         </div>
                     </div>
 
