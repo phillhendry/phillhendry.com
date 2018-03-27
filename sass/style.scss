@@ -25,6 +25,9 @@ html {
 }
 
 body {
+	.content {
+		max-width: $content-width;
+	}
 
 	height: 100%;
 	margin: 0;
@@ -103,6 +106,7 @@ body {
 		color: $font-color;
 		font-family: $font-family-sans-serif;
 		display: flex;
+
 
 		/* Nav Item Hover Effect */
 		.nav-hover {
@@ -227,9 +231,6 @@ body {
 			color: $white;
 		}
 
-		.content {
-			max-width: $content-width;
-		}
 		.attention-grabber {
 			font-size: $display4-size;
 			line-height: 4rem;
@@ -309,6 +310,7 @@ body {
 
 	}
 
+
 }
 
 
@@ -316,40 +318,48 @@ body {
 .portfolio {
 
 	.thumbs {
-		position: relative;
+
 		img {
 			padding: 0 0 5px 0;
 		}
+		.container {
+			position: relative;
+			width: 260px;
+			margin: 0;
+			padding: 0;
+			display: inline-flex;
+			vertical-align: top;
 
-		.image {
-			display: block;
-			width: 260px;
-			height: auto;
-		}
-		.overlay {
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			height: 100%;
-			width: 260px;
-			opacity: 0;
-			transition: .5s ease;
-			background-color: $danger;
-		}
-		&:hover .overlay {
-			opacity: 0.8;
-		}
-		.text {
-			color: white;
-			font-size: 20px;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			-ms-transform: translate(-50%, -50%);
-			text-align: center;
+			.image {
+				display: block;
+				width: 260px;
+				height: auto;
+			}
+			.overlay {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: calc(100% - 5px);
+				width: 260px;
+				opacity: 0;
+				transition: .5s ease;
+				background-color: $danger;
+			}
+			&:hover .overlay {
+				opacity: 0.8;
+			}
+			.text {
+				color: white;
+				font-size: 20px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				text-align: center;
+			}
 		}
 	}
 
@@ -357,6 +367,12 @@ body {
 		width: 100%;
 		height: 100%;
 		margin: 0;
+		.content {
+			margin: 0 auto;
+		}
+		img {
+			padding: 0 5px 5px 0;
+		}
 		.badge {
 			text-transform: uppercase;
 			font-weight: $font-weight-bold;
@@ -364,6 +380,48 @@ body {
 		}
 	}
 }
+
+// Masonry Styling //
+.grid-item {
+	width: 260px;
+}
+
+.grid-item--width2 {
+	width: 520px;
+}
+
+
+
+
+// Portfolio Items - Backgrounds //
+.bg-ar {
+	background-color: #5c1f2e;
+}
+
+.bg-amv {
+	background-color: #3dbfbf;
+}
+
+.bg-arcane {
+	background-color: #252525;
+}
+
+.bg-bellisle {
+	background-color: #49494b;
+}
+
+.bg-bevans {
+	background-color: #e94f1d;
+}
+
+.bg-blossom {
+	background-color: #f16386;
+}
+
+.bg-fss {
+	background-color: #147c3f;
+}
+
 
 
 .fancybox-close-small {

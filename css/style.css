@@ -7869,6 +7869,8 @@ body {
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed; }
+  body .content {
+    max-width: 55rem; }
   body.index {
     background: -webkit-gradient(linear, left bottom, left top, from(#DE3C4B), to(#ca054d));
     background: linear-gradient(0deg, #DE3C4B, #ca054d);
@@ -8006,8 +8008,6 @@ body {
       font-size: 1.2rem;
       font-weight: 300;
       color: #fff; }
-    body main .content {
-      max-width: 45rem; }
     body main .attention-grabber {
       font-size: 3.5rem;
       line-height: 4rem;
@@ -8065,29 +8065,36 @@ body {
       width: 100%;
       height: 100%; }
 
-.portfolio .thumbs {
-  position: relative; }
-  .portfolio .thumbs img {
-    padding: 0 0 5px 0; }
-  .portfolio .thumbs .image {
+.portfolio .thumbs img {
+  padding: 0 0 5px 0; }
+.portfolio .thumbs .container {
+  position: relative;
+  width: 260px;
+  margin: 0;
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: top; }
+  .portfolio .thumbs .container .image {
     display: block;
     width: 260px;
     height: auto; }
-  .portfolio .thumbs .overlay {
+  .portfolio .thumbs .container .overlay {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100%;
+    height: calc(100% - 5px);
     width: 260px;
     opacity: 0;
     -webkit-transition: .5s ease;
     transition: .5s ease;
     background-color: #dc3545; }
-  .portfolio .thumbs:hover .overlay {
+  .portfolio .thumbs .container:hover .overlay {
     opacity: 0.8; }
-  .portfolio .thumbs .text {
+  .portfolio .thumbs .container .text {
     color: white;
     font-size: 20px;
     position: absolute;
@@ -8101,9 +8108,40 @@ body {
   width: 100%;
   height: 100%;
   margin: 0; }
+  .portfolio .portfolio_content .content {
+    margin: 0 auto; }
+  .portfolio .portfolio_content img {
+    padding: 0 5px 5px 0; }
   .portfolio .portfolio_content .badge {
     text-transform: uppercase;
     font-weight: 600; }
+
+.grid-item {
+  width: 260px; }
+
+.grid-item--width2 {
+  width: 520px; }
+
+.bg-ar {
+  background-color: #5c1f2e; }
+
+.bg-amv {
+  background-color: #3dbfbf; }
+
+.bg-arcane {
+  background-color: #252525; }
+
+.bg-bellisle {
+  background-color: #49494b; }
+
+.bg-bevans {
+  background-color: #e94f1d; }
+
+.bg-blossom {
+  background-color: #f16386; }
+
+.bg-fss {
+  background-color: #147c3f; }
 
 .fancybox-close-small {
   width: 6rem;

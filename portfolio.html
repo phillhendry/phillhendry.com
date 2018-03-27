@@ -33,6 +33,9 @@
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
+    <!-- Masonry -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+
 
     <meta name="theme-color" content="#000000">
 
@@ -122,21 +125,94 @@
             <!-- Content -->
             <div class="col-md-9 mt-5 pl-lg-5 content">
                 <h1 class="pb-5">Portfolio</h1>
-                <p><span class="attention-grabber">Below you can check out some of my favourite projects I've worked on 🔥.</span></p>
+                <p><span class="attention-grabber">Check out some of my favourite projects I've worked on 🔥.</span></p>
                 <p>If you have any questions ot want to have a chat about a project then you can jump on over to the <a href="contact.html">contact page</a> and drop me a line 📨.</p>
 
 
                 <!-- Portfolio Content -->
                 <div class="portfolio">
                     <!-- Thumnail Gallery -->
-                    <div class="thumbs">
-                        <a data-fancybox id="amv" data-src="#amv-content" href="javascript:;" class="">
-                        <img src="images/Thumbnails/amv.jpg" class="image">
-                        <div class="overlay">
-                            <div class="text"><i class="far fa-images fa-3x"></i></div>
+                    <div class="thumbs grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 260, "gutter": 5 }'>
+                        <div class="container grid-item">
+                            <a data-fancybox id="amv" data-src="#amv-content" href="javascript:;" class="">
+                            <img src="images/Thumbnails/amv.jpg" class="image">
+                            <div class="overlay">
+                                <div class="text"><i class="far fa-images fa-3x"></i></div>
+                            </div>
+                        </a>
                         </div>
-                    </a>
+                        <div class="container grid-item">
+                            <a data-fancybox id="ar" data-src="#ar-content" href="javascript:;" class="">
+                            <img src="images/Thumbnails/annarobinson.jpg" class="image">
+                            <div class="overlay">
+                                <div class="text"><i class="far fa-images fa-3x"></i></div>
+                            </div>
+                        </a>
+                        </div>
+                        <div class="container grid-item">
+                            <a data-fancybox id="arcane" data-src="#arcane-content" href="javascript:;" class="">
+                            <img src="images/Thumbnails/arcanemedia.jpg" class="image">
+                            <div class="overlay">
+                                <div class="text"><i class="far fa-images fa-3x"></i></div>
+                            </div>
+                        </a>
+                        </div>
+                        <div class="container grid-item">
+                            <a href="https://vimeo.com/114856237" data-fancybox>
+                            <img src="images/Thumbnails/aurion.png" class="image">
+                            <div class="overlay">
+                                <div class="text"><i class="fas fa-video fa-3x"></i></div>
+                            </div>
+                        </a>
+                        </div>
+                        <div class="container grid-item">
+                            <a data-fancybox id="bellisle" data-src="#bellisle-content" href="javascript:;" class="">
+                            <img src="images/Thumbnails/bellilse.jpg" class="image">
+                            <div class="overlay">
+                                <div class="text"><i class="far fa-images fa-3x"></i></div>
+                            </div>
+                        </a>
+                        </div>
+                        <div class="container grid-item">
+                            <a data-fancybox id="bevans" data-src="#bevans-content" href="javascript:;" class="">
+                            <img src="images/Thumbnails/bevansgarage.jpg" class="image">
+                            <div class="overlay">
+                                <div class="text"><i class="far fa-images fa-3x"></i></div>
+                            </div>
+                        </a>
+                        </div>
+                        <div class="container grid-item">
+                            <a data-fancybox id="blossom" data-src="#blossom-content" href="javascript:;" class="">
+                            <img src="images/Thumbnails/blossomdaycare.jpg" class="image">
+                            <div class="overlay">
+                                <div class="text"><i class="far fa-images fa-3x"></i></div>
+                            </div>
+                        </a>
+                        </div>
+                        <div class="container grid-item">
+                            <a href="https://vimeo.com/148944306" data-fancybox>
+                            <img src="images/Thumbnails/cookiebox.png" class="image">
+                            <div class="overlay">
+                                <div class="text"><i class="fas fa-video fa-3x"></i></div>
+                            </div>
+                        </a>
+                        </div>
+                        <div class="container grid-item">
+                            <a data-fancybox id="fss" data-src="#fss-content" href="javascript:;" class="">
+                            <img src="images/Thumbnails/foodsafesystem.jpg" class="image">
+                            <div class="overlay">
+                                <div class="text"><i class="far fa-images fa-3x"></i></div>
+                            </div>
+                        </a>
+                        </div>
+
+
+
+
+
                     </div>
+
+
 
 
                     <!-- End Thumnails -->
@@ -145,40 +221,157 @@
 
                     <!--AMV-->
 
-                    <div id="amv-content" class="portfolio_content bg-danger text-white text-center animated zoomIn" style="display: none;">
-                        <div class="">
-                            <div class="display-2 mb-4">AMV</div>
+                    <div id="amv-content" class="portfolio_content bg-amv text-white text-center animated zoomIn" style="display: none;">
+                        <div class="content">
+                            <div class="display-2 my-4">AMV</div>
                             <h5>
                                 <span class="badge badge-pill badge-light m-2 p-2 px-3"><i class="fas fa-pencil-alt pr-2 text-danger"></i>Branding</span>
                                 <span class="badge badge-pill badge-light m-2 p-2 px-3"><i class="far fa-keyboard pr-2 text-danger"></i>Web</span>
                                 <span class="badge badge-pill badge-light m-2 p-2 px-3"><i class="fas fa-video pr-2 text-danger"></i>Motion Graphics</span>
                             </h5>
-                            <p class="mt-4">Description of project goes here.</p>
+                            <h2 class="mt-4 font-weight-light">Brief: Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit.</h2>
+                            <p>Solution: Nulla porttitor accumsan tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Donec rutrum congue leo eget malesuada. Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Sed porttitor lectus nibh.</p>
+                        </div>
+                        <div class="images">
 
                             <a href="images/AMV/AMV-branding-mockup.jpg" data-fancybox="AMV" data-caption="AMV Branding"><img src="images/AMV/_thumb/AMV-branding-mockup.jpg"></a>
                             <a href="images/AMV/AMV-business-card-mockup.jpg" data-fancybox="AMV" data-caption="AMV Business Card"><img src="images/AMV/_thumb/AMV-business-card-mockup.jpg"></a>
                             <a href="images/AMV/AMV-letterhead-mockup.jpg" data-fancybox="AMV" data-caption="AMV Letterhead"><img src="images/AMV/_thumb/AMV-letterhead-mockup.jpg"></a>
                             <a href="images/AMV/AMV-logo-mockup.jpg" data-fancybox="AMV" data-caption="AMV Logo"><img src="images/AMV/_thumb/AMV-logo-mockup.jpg"></a>
                             <a href="images/AMV/AMV-website-mockup.jpg" data-fancybox="AMV"><img src="images/AMV/_thumb/AMV-website-mockup.jpg"></a>
+                            <a href="https://vimeo.com/149953828" data-fancybox="AMV"><img src="images/AMV/_thumb/AMV-logo-sting.jpg"></a>
 
                         </div>
                     </div>
 
                     <!-- Anna Robinson -->
+                    <div id="ar-content" class="portfolio_content bg-ar text-white text-center animated zoomIn" style="display: none;">
+                        <div class="content">
+                            <div class="display-2 mb-4">Anna Robinson
+                                <h3 class="font-weight-light">Silversmith & Jeweller</h3>
+                            </div>
+                            <h5>
+                                <span class="badge badge-pill badge-light m-2 p-2 px-3"><i class="fas fa-pencil-alt pr-2 text-danger"></i>Branding</span>
+                            </h5>
+                            <p class="mt-4">Description of project goes here.</p>
+                        </div>
+                        <div class="images">
+
+                            <a href="images/Anna_Robinson/Anna-Robinson-logo-mockup.jpg" data-fancybox="ar" data-caption="Anna Robinson Logo"><img src="images/Anna_Robinson/_thumb/Anna-Robinson-logo-mockup.jpg"></a>
+                            <a href="images/Anna_Robinson/Anna-Robinson-business-card-mockup.jpg" data-fancybox="ar" data-caption="Anna Robinson Business Card"><img src="images/Anna_Robinson/_thumb/Anna-Robinson-business-card-mockup.jpg"></a>
+                            <a href="images/Anna_Robinson/slider_image_2_alt.jpg" data-fancybox="ar" data-caption="Anna Robinson Sample Styling"><img src="images/Anna_Robinson/_thumb/slider_image_2_alt.jpg"></a>
+                            <a href="images/Anna_Robinson/slider_image_3_alt.jpg" data-fancybox="ar" data-caption="Anna Robinson Sample Styling"><img src="images/Anna_Robinson/_thumb/slider_image_3_alt.jpg"></a>
+
+                        </div>
+                    </div>
 
                     <!-- Arcane -->
+                    <div id="arcane-content" class="portfolio_content bg-arcane text-white text-center animated zoomIn" style="display: none;">
+                        <div class="content">
+                            <div class="display-2 mb-4">Arcane Media</div>
+                            <h5>
+                                <span class="badge badge-pill badge-light m-2 p-2 px-3"><i class="fas fa-pencil-alt pr-2 text-danger"></i>Branding</span>
+                                <span class="badge badge-pill badge-light m-2 p-2 px-3"><i class="far fa-keyboard pr-2 text-danger"></i>Web</span>
+                                <span class="badge badge-pill badge-light m-2 p-2 px-3"><i class="fas fa-video pr-2 text-danger"></i>Motion Graphics</span>
+                            </h5>
+                            <p class="mt-4">Description of project goes here.</p>
+                        </div>
+                        <div class="images">
+
+                            <a href="images/Arcane_Media/arcane-branding-mockup.jpg" data-fancybox="arcane" data-caption="Arcane Media Branding"><img src="images/Arcane_Media/_thumb/arcane-branding-mockup.jpg"></a>
+                            <a href="images/Arcane_Media/arcane-business-card-mockup.jpg" data-fancybox="arcane" data-caption="Arcane Media Business Card"><img src="images/Arcane_Media/_thumb/arcane-business-card-mockup.jpg"></a>
+                            <a href="images/Arcane_Media/arcane-website-mockup.jpg" data-fancybox="arcane" data-caption="Arcane Media Website"><img src="images/Arcane_Media/_thumb/arcane-website-mockup.jpg"></a>
+                            <a href="images/Arcane_Media/arcane_bg2.jpg" data-fancybox="arcane" data-caption="Arcane Media Sample Styling"><img src="images/Arcane_Media/_thumb/arcane_bg2.jpg"></a>
+                            <a href="https://vimeo.com/78104964" data-fancybox="arcane" data-caption="Arcane Media Motion Graphics"><img src="images/Arcane_Media/_thumb/arcane-mograph.jpg"></a>
+
+                        </div>
+                    </div>
 
                     <!-- Aurion -->
 
                     <!-- Bellilse -->
+                    <div id="bellisle-content" class="portfolio_content bg-bellisle text-white text-center animated zoomIn" style="display: none;">
+                        <div class="content">
+                            <div class="display-2 my-4">Bellisle Contracts</div>
+                            <h5>
+                                <span class="badge badge-pill badge-light m-2 p-2 px-3"><i class="fas fa-pencil-alt pr-2 text-danger"></i>Branding</span>
+                            </h5>
+                            <h2 class="mt-4 font-weight-light">Brief: Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit.</h2>
+                            <p>Solution: Nulla porttitor accumsan tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Donec rutrum congue leo eget malesuada. Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Sed porttitor lectus nibh.</p>
+                        </div>
+                        <div class="images">
+
+                            <a href="images/Bellisle_Contracts/Bellisle-Contracts-logos.jpg" data-fancybox="Bellisle" data-caption="Bellisle Contracts Logo Variations"><img src="images/Bellisle_Contracts/_thumb/Bellisle-Contracts-logos.jpg"></a>
+                            <a href="images/Bellisle_Contracts/Bellisle-Contracts-Branding_Page_1.jpg" data-fancybox="Bellisle" data-caption="Bellisle Contracts Main Logo"><img src="images/Bellisle_Contracts/_thumb/Bellisle-Contracts-Branding_Page_1.jpg"></a>
+                            <a href="images/Bellisle_Contracts/bellisle-contracts-business-card-mockup.jpg" data-fancybox="Bellisle" data-caption="Bellisle Contracts Business Card"><img src="images/Bellisle_Contracts/_thumb/bellisle-contracts-business-card-mockup.jpg"></a>
+                            <a href="images/Bellisle_Contracts/bellisle-contracts-logo-mockup.jpg" data-fancybox="Bellisle" data-caption="Bellisle Contracts Styling Option"><img src="images/Bellisle_Contracts/_thumb/bellisle-contracts-logo-mockup.jpg"></a>
+
+                        </div>
+                    </div>
 
                     <!-- Bevans Garage -->
+                    <div id="bevans-content" class="portfolio_content bg-bevans text-white text-center animated zoomIn" style="display: none;">
+                        <div class="content">
+                            <div class="display-2 my-4">Bevans Garage</div>
+                            <h5>
+                                <span class="badge badge-pill badge-light m-2 p-2 px-3"><i class="fas fa-pencil-alt pr-2 text-danger"></i>Branding</span>
+                            </h5>
+                            <h2 class="mt-4 font-weight-light">Brief: Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit.</h2>
+                            <p>Solution: Nulla porttitor accumsan tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Donec rutrum congue leo eget malesuada. Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Sed porttitor lectus nibh.</p>
+                        </div>
+                        <div class="images">
+
+                            <a href="images/Bevans_Garage/Bevans_Garage_Mockup.jpg" data-fancybox="Bevans" data-caption="Bevans Garage Branding"><img src="images/Bevans_Garage/_thumb/Bevans_Garage_Mockup.jpg"></a>
+                            <a href="images/Bevans_Garage/Bevans_Garage_Car_Mockup.jpg" data-fancybox="Bevans" data-caption="Bevans Garage Logo"><img src="images/Bevans_Garage/_thumb/Bevans_Garage_Car_Mockup.jpg"></a>
+                            <a href="images/Bevans_Garage/Bevans_Garage_Tshirt_Mockup.jpg" data-fancybox="Bevans" data-caption="Bevans Garage T-Shirt"><img src="images/Bevans_Garage/_thumb/Bevans_Garage_Tshirt_Mockup.jpg"></a>
+
+                        </div>
+                    </div>
 
                     <!-- Blossom -->
+                    <div id="blossom-content" class="portfolio_content bg-blossom text-white text-center animated zoomIn" style="display: none;">
+                        <div class="content">
+                            <div class="display-2 my-4">Blossom Daycare</div>
+                            <h5>
+                                <span class="badge badge-pill badge-light m-2 p-2 px-3"><i class="fas fa-pencil-alt pr-2 text-danger"></i>Branding</span>
+                                <span class="badge badge-pill badge-light m-2 p-2 px-3"><i class="far fa-keyboard pr-2 text-danger"></i>Web</span>
+                            </h5>
+                            <h2 class="mt-4 font-weight-light">Brief: Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit.</h2>
+                            <p>Solution: Nulla porttitor accumsan tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Donec rutrum congue leo eget malesuada. Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Sed porttitor lectus nibh.</p>
+                        </div>
+                        <div class="images">
+
+                            <a href="images/Blossom_Daycare/blossom-daycare-branding-concept.jpg" data-fancybox="Blossom" data-caption="Blossom Daycare Branding"><img src="images/Blossom_Daycare/_thumb/blossom-daycare-branding-concept.jpg"></a>
+                            <a href="images/Blossom_Daycare/blossom-daycare-business-card-concept.jpg" data-fancybox="Blossom" data-caption="Blossom Daycare Business Card"><img src="images/Blossom_Daycare/_thumb/blossom-daycare-business-card-concept.jpg"></a>
+                            <a href="images/Blossom_Daycare/blossom-daycare-logo-concept.jpg" data-fancybox="Blossom" data-caption="Blossom Daycare Logo"><img src="images/Blossom_Daycare/_thumb/blossom-daycare-logo-concept.jpg"></a>
+                            <a href="images/Blossom_Daycare/blossom-website-mockup.jpg" data-fancybox="Blossom" data-caption="Blossom Daycare Website"><img src="images/Blossom_Daycare/_thumb/blossom-website-mockup.jpg"></a>
+                            <a href="images/Blossom_Daycare/t-shirt-mockup.jpg" data-fancybox="Blossom" data-caption="Blossom Daycare T-Shirt"><img src="images/Blossom_Daycare/_thumb/t-shirt-mockup.jpg"></a>
+
+                        </div>
+                    </div>
 
                     <!-- Cookie Box -->
 
                     <!-- FSS -->
+                    <div id="fss-content" class="portfolio_content bg-fss text-white text-center animated zoomIn" style="display: none;">
+                        <div class="content">
+                            <div class="display-2 my-4">Food Safe System</div>
+                            <h5>
+                                <span class="badge badge-pill badge-light m-2 p-2 px-3"><i class="fas fa-pencil-alt pr-2 text-danger"></i>Branding</span>
+                                <span class="badge badge-pill badge-light m-2 p-2 px-3"><i class="fas fa-mobile-alt pr-2 text-danger"></i>UI</span>
+                                <span class="badge badge-pill badge-light m-2 p-2 px-3"><i class="far fa-heart pr-2 text-danger"></i>UX</span>
+                            </h5>
+                            <h2 class="mt-4 font-weight-light">Brief: Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit.</h2>
+                            <p>Solution: Nulla porttitor accumsan tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Donec rutrum congue leo eget malesuada. Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Sed porttitor lectus nibh.</p>
+                        </div>
+                        <div class="images">
+
+                            <a href="images/Food_Safe_System/fss-logo-and-icons.jpg" data-fancybox="FSS" data-caption="Food Safe System Branding"><img src="images/Food_Safe_System/_thumb/fss-logo-and-icons.jpg"></a>
+                            <a href="images/Food_Safe_System/fss-phone-mockup.jpg" data-fancybox="FSS" data-caption="Food Safe System App Design"><img src="images/Food_Safe_System/_thumb/fss-phone-mockup.jpg"></a>
+                            <a href="images/Food_Safe_System/fss-screens-mockup.jpg" data-fancybox="FSS" data-caption="Food Safe System App Screens"><img src="images/Food_Safe_System/_thumb/fss-screens-mockup.jpg"></a>
+
+                        </div>
+                    </div>
 
                     <!-- Green Retail -->
 
@@ -243,14 +436,6 @@
     <!-- Fancy Box -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
 
-    <script type="text/javascript">
-        $(".fancybox").fancybox({
-            tpl: {
-                closeBtn: '<a title="Close" class="fancybox-item fancybox-close myClose" href="javascript:;"></a>'
-            }
-        });
-
-    </script>
 
 
 </body>
